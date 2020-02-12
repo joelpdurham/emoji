@@ -30,10 +30,10 @@ describe('Reducer Test', () => {
 
   it('can handle the study case', () => {
     const action = 'STUDY';
-    const initialState = { study: 0 };
+    const initialState = { studies: 0 };
 
     const newState = reducer(initialState, action);
 
-    expect(newState).toEqual({ study: 1 });
+    expect(newState).toEqual({ studies: 1 });
   });
 });
