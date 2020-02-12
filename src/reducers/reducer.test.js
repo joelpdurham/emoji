@@ -1,3 +1,5 @@
+import { reducer } from './reducer';
+
 describe('Reducer Test', () => {
   it('can handles the coffee case', () => {
     const action = 'DRINK COFFEE';
