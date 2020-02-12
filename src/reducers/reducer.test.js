@@ -18,4 +18,13 @@ describe('Reducer Test', () => {
 
     expect(newState).toEqual({ snacks: 1 });
   });
+
+  it('can handles the take nap case', () => {
+    const action = 'TAKE_NAP';
+    const initialState = { naps: 0 };
+
+    const newState = reducer(initialState, action);
+
+    expect(newState).toEqual({ naps: 1 });
+  });
 });
