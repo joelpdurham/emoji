@@ -36,4 +36,13 @@ describe('Reducer Test', () => {
 
     expect(newState).toEqual({ studies: 1 });
   });
+
+  it('can handle an unrecognized action', () => {
+    const action = 'POOP';
+    const initialState = { studies: 1, coffees: 5, naps: 3 };
+
+    const newState = reducer(initialState, action);
+
+    expect(newState).toEqual({ studies: 1, coffees: 5, naps: 3 });
+  });
 });
