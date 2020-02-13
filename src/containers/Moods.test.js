@@ -49,6 +49,10 @@ describe('Moods', () => {
       expect(getFace({ coffees: 0, naps: 0, snacks: 0 })).toEqual('😠');
     });
 
+    it('has pooped', () => {
+      expect(getFace({ coffees: 10 })).toEqual('😅💩');
+    });
+
     it('is sick if hyper and hungry', () => {
       expect(getFace({ coffees: 4, snacks: 0 })).toEqual('😱');
     });
