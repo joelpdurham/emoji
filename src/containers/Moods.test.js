@@ -38,7 +38,7 @@ describe('Moods', () => {
     });
 
     it('knows if it has pooped from too much coffee', () => {
-      expect(hasPooped({ coffees: 10 })).toBeTruthy();
+      expect(hasPooped({ coffees: 10, snacks: 1 })).toBeTruthy();
     });
 
     it('knows if it has NOT pooped from too much coffee', () => {
@@ -50,7 +50,7 @@ describe('Moods', () => {
     });
 
     it('has pooped', () => {
-      expect(getFace({ coffees: 10 })).toEqual('😅💩');
+      expect(getFace({ coffees: 10, snacks: 2 })).toEqual('😅💩');
     });
 
     it('is sick if hyper and hungry', () => {

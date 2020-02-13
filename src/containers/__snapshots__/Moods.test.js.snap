@@ -29,6 +29,12 @@ exports[`Moods container matches a snapshot 1`] = `
           "stateName": "studies",
           "text": "Study",
         },
+        Object {
+          "count": 0,
+          "name": "DRINK_POTION",
+          "stateName": "potions",
+          "text": "Magic Potion",
+        },
       ]
     }
     handleSelection={[Function]}

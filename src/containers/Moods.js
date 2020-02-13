@@ -10,7 +10,8 @@ export const Moods = () => {
     coffees: 0,
     snacks: 0,
     naps: 0,
-    studies: 0
+    studies: 0,
+    potions: 0
   });
 
   const controlActions = getActions(state);

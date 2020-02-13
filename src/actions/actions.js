@@ -3,6 +3,7 @@ const actions = [
   { name: 'EAT_SNACK', text: 'Snack', stateName: 'snacks' },
   { name: 'TAKE_NAP', text: 'Nap', stateName: 'naps' },
   { name: 'STUDY', text: 'Study', stateName: 'studies' },
+  { name: 'DRINK_POTION', text: 'Magic Potion', stateName: 'potions' }
 ];
 
 export const getActions = (state) => {
