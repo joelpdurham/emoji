@@ -10,6 +10,12 @@ export const reducer = (state, action) => {
       return { ...state, studies: state.studies + 1 };
     case 'DRINK_POTION':
       return { ...state, potions: state.potions + 1 };
+    case 'RESET':
+      return { coffees: 0,
+        snacks: 0,
+        naps: 0,
+        studies: 0,
+        potions: 0 };
     default:
       return state;
   }
