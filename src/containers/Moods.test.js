@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { isTired, isEducated, isHungry, isHyper, getFace, hasPooped } from '../selectors/faceSelector';
+import { isTired, isEducated, isHungry, isHyper, getFace, hasPooped, drankPotion } from '../selectors/faceSelector';
 import { Moods } from './Moods';
 
 describe('Moods', () => {
@@ -43,6 +43,14 @@ describe('Moods', () => {
 
     it('knows if it has NOT pooped from too much coffee', () => {
       expect(hasPooped({ coffees: 9 })).toBeFalsy();
+    });
+
+    it('knows if it has drank a potion', () => {
+      expect(drankPotion({ potions: 1 })).toBeTruthy();
+    });
+
+    it('knows if it has NOT drank a potion', () => {
+      expect(drankPotion({ potions: 0 })).toBeFalsy();
     });
 
     it('is very angry if tired and hungry', () => {

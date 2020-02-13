@@ -8,7 +8,7 @@ export const reducer = (state, action) => {
       return { ...state, naps: state.naps + 1 };
     case 'STUDY':
       return { ...state, studies: state.studies + 1 };
-    case 'POTIONS':
+    case 'DRINK_POTION':
       return { ...state, potions: state.potions + 1 };
     default:
       return state;
