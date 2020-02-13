@@ -54,4 +54,13 @@ describe('Reducer Test', () => {
 
     expect(newState).toEqual({ studies: 1, coffees: 5, naps: 3 });
   });
+
+  it('can reset', () => {
+    const action = 'RESET';
+    const initialState = { studies: 1, coffees: 2, naps: 3, snacks: 4, potions: 1 };
+
+    const newState = reducer(initialState, action);
+
+    expect(newState).toEqual({ studies: 0, coffees: 0, naps: 0, snacks: 0, potions: 0 });
+  });
 });

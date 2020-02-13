@@ -7,7 +7,7 @@ export const drankPotion = state => state.potions > 0;
 
 export const getFace = state => {
   if(drankPotion(state)) {
-    const i = Math.floor(Math.random() * 7);
+    const i = Math.floor(Math.random() * 8);
     const arr = ['🐶', '🐸', '🐒', '🦄', '🐉', '🐔', '🦑', '🦖'];
     return arr[i];
   }
